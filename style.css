@@ -1,0 +1,186 @@
+/* General CSS Starts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+:root {
+    --offwhite: #F5F7F8;
+    --black: #000000;
+    --orange: #F4CE14;
+    --sage: #495E57;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#F5F7F8;
+    font-family: 'Poppins', sans-serif;
+}
+/* General CSS Ends */
+
+/* Header CSS Starts */
+.nav-link{
+    color: #000000;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+.nav-link:hover{
+    color: #000000;
+    opacity: 1;
+}
+.nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #F4CE14;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+.nav-link-ltr::before {
+    width: 0%;
+    bottom:1px;
+    left:0;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+/* Header CSS Ends */
+
+/* Home Section CSS Starts */
+.title{
+    color: #F4CE14;
+}
+.typography {
+    width: 19ch;
+    animation: typing 2s steps(19), blink .4s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    color: #000000;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    40% {
+        margin-left: 0;
+        border-color: transparent
+    }
+}
+.icons{
+    font-size: 28px;
+}
+.icons i{
+    color: black;
+}
+.icons i:hover{
+    color: #F4CE14;
+}
+.parthimg{
+    width: 100%;
+    border-radius: 200px;
+}
+/* Home Section CSS Ends */
+
+/* About Section CSS Starts */
+
+.fa-html5{
+    width: 100%;
+}
+
+.progress-bar{
+    background-color: #F4CE14;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.dnldbtn:hover{
+    border-radius: 20px;
+    background-color: #000000;
+    color: #F4CE14;
+    border-color: #000000;
+}
+.dnldbtn{
+    border-radius: 20px;
+    background-color: #F4CE14;
+    color: #000000;
+    border-color: #F4CE14;
+}
+.lh-050{
+    line-height: 0.50;
+}
+
+/* Portfolio Section CSS Starts */
+.card{
+    background-color: #F5F7F8;
+}
+.card-header{
+    color: white;
+    background-color: #000000;
+}
+.card-footer{
+    color: #000000;
+    font-weight: 300;
+}
+/* Portfolio Section CSS Ends */
+
+/* Footer Section CSS Starts */
+.contactinfo a{ 
+    text-decoration: none;
+    color: black;
+}
+
+.quicklinks a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer Section CSS Ends */
+
+
+/* External media-querys */
+@media (min-width: 1200px)
+{
+    .profilepic{
+        display: flex;
+        justify-content: center;
+    }
+    .info{
+        padding: 6rem 0;
+    }
+}
+@media (min-width: 768px){
+    .profilepic{
+        align-items: center;
+    }
+}
+@media (min-width: 576px){
+    .profilepic{
+        align-items: center;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:992px){
+    .profilepic{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
